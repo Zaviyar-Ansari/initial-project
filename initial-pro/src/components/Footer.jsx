@@ -2,10 +2,10 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="w-full bg-gray-500 mt-32 px-20 h-64">
-      <div className="w-full py-8 px-4">
+    <div className="w-full bg-gray-500 mt-32">
+      <div className="w-full py-8 px-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-    
+
           {/* Logo Section */}
           <div className="text-left">
             <h1 className="text-xl font-bold">LOGO</h1>
@@ -39,16 +39,36 @@ const Footer = () => {
           <div className="text-left">
             <h1 className="text-xl font-bold">Gallery</h1>
             <div className="grid grid-cols-3 gap-0 mt-4">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMkgVeaXgPDa2i4DjNslL-x8dWSBzG11hE3VbM5T6t7POPAQfKaRbL7WjHQ&s" alt="Gallery" className="w-full h-auto rounded-md" />
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMkgVeaXgPDa2i4DjNslL-x8dWSBzG11hE3VbM5T6t7POPAQfKaRbL7WjHQ&s" alt="Gallery" className="w-full h-auto rounded-md" />
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMkgVeaXgPDa2i4DjNslL-x8dWSBzG11hE3VbM5T6t7POPAQfKaRbL7WjHQ&s" alt="Gallery" className="w-full h-auto rounded-md" />
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMkgVeaXgPDa2i4DjNslL-x8dWSBzG11hE3VbM5T6t7POPAQfKaRbL7WjHQ&s" alt="Gallery" className="w-full h-auto rounded-md" />
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMkgVeaXgPDa2i4DjNslL-x8dWSBzG11hE3VbM5T6t7POPAQfKaRbL7WjHQ&s" alt="Gallery" className="w-full h-auto rounded-md" />
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMkgVeaXgPDa2i4DjNslL-x8dWSBzG11hE3VbM5T6t7POPAQfKaRbL7WjHQ&s" alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
             </div>
           </div>
         </div>
       </div>
+
+      {/* Spacer between upper footer and bottom section */}
+      <div className="w-full bg-gray-500 py-6"></div>
+
+      {/* Footer Bottom Section */}
+      <footer className="w-full bg-gray-800 text-white py-4">
+  <div className="container mx-auto flex justify-between items-center">
+    
+    <h1 className='ml-10'>
+      Copyright © 2000-2020.logo.com.
+    </h1>
+  
+    <ul className='flex flex-row gap-5'>
+      <li>All rights reserved</li>
+      <li>Privacy Policy</li>
+      <li>Term of Use Partner</li>
+    </ul>
+  </div>
+</footer>
+
     </div>
   );
 };

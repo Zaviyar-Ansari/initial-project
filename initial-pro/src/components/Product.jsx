@@ -149,6 +149,91 @@ Aenean pretium odio vel tempor sodales. Suspendisse eu fringilla leo, non alique
               <li>Personalize them with your own designs, patterns, or embellishments to make them uniquely yours.</li>
             </ul>
           </div>
+
+
+
+          
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 className='text-4xl pb-4 text-left '>Similar Products
+    </h1>
+    <div class="flex flex-wrap -m-4">
+    <div class="p-4 lg:w-1/4 text-left">
+        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
+         
+          </div>
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Product Name</h2>
+        <p class=" mt-2">$38.00 <del>$45.00</del></p>
+      </div>
+      <div class="p-4 lg:w-1/4  text-left">
+        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
+         
+          </div>
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Product Name</h2>
+        <p class=" mt-2">$38.00  </p>
+      </div>
+      <div class="p-4 lg:w-1/4  text-left">
+        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
+         
+          </div>
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Product Name</h2>
+        <p class=" mt-2">$38.00  </p>
+      </div>
+      <div class="p-4 lg:w-1/4  text-left ">
+        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
+         
+          </div>
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Product Name</h2>
+        <p class=" mt-2">$38.00  </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div className="w-full h-auto bg-red-400 mt-10 py-10">
+  {/* Our Services Title */}
+  <h1 className="text-center text-3xl font-bold mb-10">Our Services</h1>
+  
+  {/* Services Section */}
+  <div className="flex flex-row justify-around space-x-8">
+    {/* Concierge Service */}
+    <div className="flex flex-col items-center p-4 max-w-xs">
+      <h2 className="text-xl font-semibold mb-4">Concierge Service</h2>
+      <p className="text-center">
+        Lorem ipsum dolor sit amet consectetur. Ut sit dui congue est. Odio euismod sed amet libero. Scelerisque sed enim.
+      </p>
+    </div>
+
+    {/* Dining Service */}
+    <div className="flex flex-col items-center p-4  max-w-xs">
+      <h2 className="text-xl font-semibold mb-4">Dining</h2>
+      <p className="text-center">
+        Lorem ipsum dolor sit amet consectetur. Ut sit dui congue est. Odio euismod sed amet libero. Scelerisque sed enim.
+      </p>
+    </div>
+
+    {/* Restaurant Service */}
+    <div className="flex flex-col items-center p-4  max-w-xs">
+      <h2 className="text-xl font-semibold mb-4">Restaurant</h2>
+      <p className="text-center">
+        Lorem ipsum dolor sit amet consectetur. Ut sit dui congue est. Odio euismod sed amet libero. Scelerisque sed enim.
+      </p>
+    </div>
+  </div>
+</div>
     </div>
   )
 }

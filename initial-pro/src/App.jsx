@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Menu from './components/Menu'
 import Faranchies from './Faranchies'
 import Product from './components/Product'
+import Cart from './components/Cart'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
-    <Product></Product>
+    <Cart></Cart>
       <Footer></Footer>
     </>
   )
