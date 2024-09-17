@@ -12,6 +12,20 @@ const Menu = () => {
       <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="text-white text-5xl">MENU</h1>
       </div>
+      <div className="absolute top-0 mt-6 mr-4  right-0 w-40 h-72">
+          <nav className="bg-gray-600 bg-opacity-10 p-4 w-full rounded-md">
+            <ul className="list-none space-y-4 text-center text-white ">
+              <li>Home</li>
+              <li>Menu</li>
+              <li>Franchises</li>
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <button className="mt-4 px-4 py-2 bg-teal-500 text-white rounded">
+                Button
+              </button>
+            </ul>
+          </nav>
+        </div>
     </div>
 
     <div className='flex flex-row gap-2 text-center inset-0 justify-evenly mt-6 justify-center'>
