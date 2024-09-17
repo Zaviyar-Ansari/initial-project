@@ -1,5 +1,11 @@
-import React from 'react';
-
+import React from 'react'
+import { Link } from 'react-router-dom';
+import HomeIcon from './icons/home.png'; // Ensure path is correct
+import CartIcon from './icons/cart.png'; // Ensure path is correct
+import CheckoutIcon from './icons/checkout.png'; // Ensure path is correct
+import FranchisesIcon from './icons/franchises.png'; // Ensure path is correct
+import AboutUsIcon from './icons/about.png'; // Ensure path is correct
+import ContactUsIcon from './icons/contact.png'; // Ensure path is correct
 const Hero = () => {
   return (
     <div>
@@ -83,18 +89,49 @@ const Hero = () => {
         />
         {/* Right-side Navbar */}
         <div className="absolute top-0 mt-6 mr-4  right-0 w-40 h-72">
-          <nav className="bg-gray-600 bg-opacity-10 p-4 w-full rounded-md">
-            <ul className="list-none space-y-4 text-center text-white ">
-              <li>Home</li>
-              <li>Menu</li>
-              <li>Franchises</li>
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <button className="mt-4 px-4 py-2 bg-teal-500 text-white rounded">
-                Button
-              </button>
-            </ul>
-          </nav>
+        <nav className="bg-gray-600 bg-opacity-10 p-4 w-full rounded-md">
+      <ul className="list-none space-y-4 text-center text-white">
+        <li>
+          <Link to="/" className="flex items-center justify-center">
+            <img src={HomeIcon} alt="Home" className="w-6 h-6 mr-2" />
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/cart" className="flex items-center justify-center">
+            <img src={CartIcon} alt="Cart" className="w-6 h-6 mr-2" />
+            Cart
+          </Link>
+        </li>
+        <li>
+          <Link to="/checkout" className="flex items-center justify-center">
+            <img src={CheckoutIcon} alt="Checkout" className="w-6 h-6 mr-2" />
+            Checkout
+          </Link>
+        </li>
+        <li>
+          <Link to="/franchises" className="flex items-center justify-center">
+            <img src={FranchisesIcon} alt="Franchises" className="w-6 h-6 mr-2" />
+            Franchises
+          </Link>
+        </li>
+        <li>
+          <Link to="/about-us" className="flex items-center justify-center">
+            <img src={AboutUsIcon} alt="About Us" className="w-6 h-6 mr-2" />
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact-us" className="flex items-center justify-center">
+            <img src={ContactUsIcon} alt="Contact Us" className="w-6 h-6 mr-2" />
+            Contact Us
+          </Link>
+        </li>
+        <button className="mt-4 px-4 py-2 bg-teal-500 text-white rounded">
+          Button
+        </button>
+      </ul>
+    </nav>
         </div>
       </div>
     </div>

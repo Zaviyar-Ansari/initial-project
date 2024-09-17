@@ -1,26 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Footer from './components/Footer'
-import Menu from './components/Menu'
-import Faranchies from './Faranchies'
-import Product from './components/Product'
-import Checkout from './components/Checkout'
-import Cart from './components/Cart'
+// src/App.jsx
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Hero from './components/Hero';
+import Cart from './components/Cart';
+import Checkout from './components/Checkout';
+import Faranchies from './components/Faranchies';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import Navbar from './components/Navbar';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <Navbar></Navbar>
-    <Cart></Cart>
-      <Footer></Footer>
-    </>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/Faranchies" element={<Faranchies />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
