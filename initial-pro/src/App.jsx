@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Menu from './components/Menu'
 import Faranchies from './Faranchies'
 import Product from './components/Product'
+import Checkout from './components/Checkout'
 import Cart from './components/Cart'
 
 function App() {
