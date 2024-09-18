@@ -22,75 +22,108 @@ const Hero = () => {
     <div>
       <div className="flex w-full h-96 overflow-hidden relative">
       <div className="w-1/2 h-full">
-        <div id="default-carousel" className="relative w-full h-full overflow-hidden shadow-lg" data-carousel="static">
-          <div className="relative h-full">
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src={closeup}
-                className="object-cover w-full h-full"
-                alt="Slide 1"
-              />
-              <span className="absolute text-xl font-semibold text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:text-2xl">
-                First Slide
-              </span>
-            </div>
+  <div
+    id="default-carousel"
+    className="relative w-full h-full overflow-hidden shadow-lg"
+    data-carousel="static"
+  >
+    {/* Carousel wrapper */}
+    <div className="relative h-full">
+      {/* Slide 1 */}
+      <div
+        className="duration-700 ease-in-out active"
+        data-carousel-item="active"
+      >
+        {/* Blackish Overlay */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
 
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src={closeup}
-                className="object-cover w-full h-full"
-                alt="Slide 2"
-              />
-              <span className="absolute text-xl font-semibold text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:text-2xl">
-                Second Slide
-              </span>
-            </div>
-
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-               src={closeup}  
-                             className="object-cover w-full h-full"
-                alt="Slide 3"
-              />
-              <span className="absolute text-xl font-semibold text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:text-2xl">
-                Third Slide
-              </span>
-            </div>
-          </div>
-
-          <button
-            type="button"
-            className="absolute z-40 flex items-center justify-center w-10 h-10 transition rounded-full top-1/2 left-3 bg-gray-200/50 hover:bg-gray-300 focus:outline-none"
-            data-carousel-prev
-          >
-            <svg
-              className="w-5 h-5 text-gray-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
-            </svg>
-          </button>
-
-          <button
-            type="button"
-            className="absolute z-40 flex items-center justify-center w-10 h-10 transition rounded-full top-1/2 right-3 bg-gray-200/50 hover:bg-gray-300 focus:outline-none"
-            data-carousel-next
-          >
-            <svg
-              className="w-5 h-5 text-gray-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
+        <img
+          src={closeup}
+          className="object-cover w-full h-full"
+          alt="Slide 1"
+        />
+        <span className="absolute text-xl font-semibold text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:text-2xl">
+          First Slide
+        </span>
       </div>
+
+      {/* Slide 2 */}
+      <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        {/* Blackish Overlay */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+
+        <img
+          src={closeup}
+          className="object-cover w-full h-full"
+          alt="Slide 2"
+        />
+        <span className="absolute text-xl font-semibold text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:text-2xl">
+          Second Slide
+        </span>
+      </div>
+
+      {/* Slide 3 */}
+      <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        {/* Blackish Overlay */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+
+        <img
+          src={closeup}
+          className="object-cover w-full h-full"
+          alt="Slide 3"
+        />
+        <span className="absolute text-xl font-semibold text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:text-2xl">
+          Third Slide
+        </span>
+      </div>
+    </div>
+
+    {/* Previous Button */}
+    <button
+      type="button"
+      className="absolute z-40 flex items-center justify-center w-10 h-10 transition rounded-full top-1/2 left-3 bg-gray-200/50 hover:bg-gray-300 focus:outline-none"
+      data-carousel-prev
+    >
+      <svg
+        className="w-5 h-5 text-gray-600"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M15 19l-7-7 7-7"
+        ></path>
+      </svg>
+    </button>
+
+    {/* Next Button */}
+    <button
+      type="button"
+      className="absolute z-40 flex items-center justify-center w-10 h-10 transition rounded-full top-1/2 right-3 bg-gray-200/50 hover:bg-gray-300 focus:outline-none"
+      data-carousel-next
+    >
+      <svg
+        className="w-5 h-5 text-gray-600"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M9 5l7 7-7 7"
+        ></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
 
       <div className="relative w-1/2 h-full">
         <img
