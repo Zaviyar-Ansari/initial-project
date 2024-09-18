@@ -1,5 +1,10 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import HomeIcon from './icons/home.png'; // Ensure path is correct
+import CartIcon from './icons/menu.png'; // Ensure path is correct
+import CheckoutIcon from './icons/franchises.png'; // Ensure path is correct
+import AboutUsIcon from './icons/about.png'; // Ensure path is correct
+import ContactUsIcon from './icons/contact.png'; // Ensure path is correct
 const Cart = () => {
   return (
     <div className="w-full p-6">

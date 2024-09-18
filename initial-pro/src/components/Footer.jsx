@@ -1,8 +1,14 @@
 import React from 'react';
-
+import food2 from './Images/unsplash2.png';
+import food3 from './Images/unsplash3.png';
+import cheff from './Images/Rectangle.png';
+import food4 from './Images/unsplash4.png';
+import food5 from './Images/unsplash5.png';
+import food6 from './Images/unsplash6.png';
+import food7 from './Images/unsplash7.png';
 const Footer = () => {
   return (
-    <div className="w-full bg-gray-500 mt-32">
+    <div className="w-full bg-gray-200 mt-32">
       <div className="w-full py-8 px-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
 
@@ -39,19 +45,19 @@ const Footer = () => {
           <div className="text-left">
             <h1 className="text-xl font-bold">Gallery</h1>
             <div className="grid grid-cols-3 gap-0 mt-4">
-              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
-              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
-              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
-              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
-              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
-              <img src="https://via.placeholder.com/150" alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src={food2} alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src={food4} alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src={food5} alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src={food6} alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src={food7} alt="Gallery" className="w-full h-auto rounded-md" />
+              <img src={food3} alt="Gallery" className="w-full h-auto rounded-md" />
             </div>
           </div>
         </div>
       </div>
 
       {/* Spacer between upper footer and bottom section */}
-      <div className="w-full bg-gray-500 py-6"></div>
+      <div className="w-full py-6"></div>
 
       {/* Footer Bottom Section */}
       <footer className="w-full bg-gray-800 text-white py-4">

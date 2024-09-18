@@ -1,10 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import HomeIcon from './icons/home.png'; // Ensure path is correct
-import CartIcon from './icons/cart.png'; // Ensure path is correct
-import CheckoutIcon from './icons/checkout.png'; // Ensure path is correct
+import CartIcon from './icons/menu.png'; // Ensure path is correct
+import CheckoutIcon from './icons/franchises.png'; // Ensure path is correct
 import AboutUsIcon from './icons/about.png'; // Ensure path is correct
-import ContactUsIcon from './icons/contact.png'; // Ensure path is correct
+import ContactUsIcon from './icons/contact.png'; // Ensure path is 
+import closeup from './Images/closeup.jpg';
+import food1 from './Images/unsplash.png';
+import food2 from './Images/unsplash2.png';
+import food3 from './Images/unsplash3.png';
+import cheff from './Images/Rectangle.png';
+import food4 from './Images/unsplash4.png';
+import food5 from './Images/unsplash5.png';
+import food6 from './Images/unsplash6.png';
+import food7 from './Images/unsplash7.png';
+import frame from './Images/frame4.png';
+import picture from './Images/Picture.png';
+import pic from './Images/pic.png';
 const Hero = () => {
   return (
     <div>
@@ -14,7 +26,7 @@ const Hero = () => {
           <div className="relative h-full">
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                src={closeup}
                 className="object-cover w-full h-full"
                 alt="Slide 1"
               />
@@ -25,7 +37,7 @@ const Hero = () => {
 
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+                src={closeup}
                 className="object-cover w-full h-full"
                 alt="Slide 2"
               />
@@ -36,8 +48,8 @@ const Hero = () => {
 
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-                className="object-cover w-full h-full"
+               src={closeup}  
+                             className="object-cover w-full h-full"
                 alt="Slide 3"
               />
               <span className="absolute text-xl font-semibold text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:text-2xl">
@@ -82,9 +94,9 @@ const Hero = () => {
 
       <div className="relative w-1/2 h-full">
         <img
-          src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a"
+          src={closeup}
           alt="Food Image"
-          className="object-cover w-full h-full rounded-lg shadow-lg"
+          className="object-cover w-full h-full shadow-lg"
         />
        <nav className="bg-gray-800 bg-opacity-50 p-4 h-fit flex flex-col justify-between rounded-md fixed right-0 top-16 z-50">
   <ul className="list-none space-y-6 text-center text-white">
@@ -95,25 +107,25 @@ const Hero = () => {
       </Link>
     </li>
     <li>
-      <Link to="/CartIcon" className="flex flex-col items-center justify-center">
-        <img src={CartIcon} alt="CartIcon" className="w-6 h-6 mb-2" />
-        <span>Cart</span>
+      <Link to="/menu" className="flex flex-col items-center justify-center">
+        <img src={CartIcon} alt="" className="w-6 h-6 mb-2" />
+        <span>Menu</span>
       </Link>
     </li>
     <li>
-      <Link to="/CheckoutIcon" className="flex flex-col items-center justify-center">
-        <img src={CheckoutIcon} alt="CheckoutIcon" className="w-6 h-6 mb-2" />
-        <span>Checkout</span>
+      <Link to="/Faranchies" className="flex flex-col items-center justify-center">
+        <img src={CheckoutIcon} alt="" className="w-6 h-6 mb-2" />
+        <span>Franchies</span>
       </Link>
     </li>
     <li>
-      <Link to="/AboutUs" className="flex flex-col items-center justify-center">
+      <Link to="/about-us" className="flex flex-col items-center justify-center">
         <img src={AboutUsIcon} alt="About" className="w-6 h-6 mb-2" />
         <span>About Us</span>
       </Link>
     </li>
     <li>
-      <Link to="/ContactUSIcon" className="flex flex-col items-center justify-center">
+      <Link to="/contact-us" className="flex flex-col items-center justify-center">
         <img src={ContactUsIcon} alt="Contact Us" className="w-6 h-6 mb-2" />
         <span>Contact Us</span>
       </Link>
@@ -185,21 +197,21 @@ const Hero = () => {
           <img
             alt="gallery"
             className="w-full h-full object-cover object-center block"
-            src="https://dummyimage.com/601x361"
+            src={food1}
           />
         </div>
         <div className="md:p-2 p-1 w-1/2">
           <img
             alt="gallery"
             className="w-full object-cover h-full object-center block"
-            src="https://dummyimage.com/502x302"
+            src={food2}
           />
         </div>
         <div className="md:p-2 p-1 w-1/2">
           <img
             alt="gallery"
             className="w-full object-cover h-full object-center block"
-            src="https://dummyimage.com/503x303"
+            src={food3}
           />
         </div>
       </div>
@@ -216,7 +228,7 @@ const Hero = () => {
       <div class="p-4 lg:w-1/4">
         <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-           <img className='relative' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" />
+           <img className='relative' src={food4} alt="cheff"></img>
            <button class="absolute justify-center m-12 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
   Button
 </button>
@@ -228,7 +240,7 @@ const Hero = () => {
       <div class="p-4 lg:w-1/4">
         <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
+          <img src={food5} alt="" /> 
           <button class="absolute justify-center m-12 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
   Button
 </button>
@@ -239,7 +251,7 @@ const Hero = () => {
       <div class="p-4 lg:w-1/4">
         <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
+          <img src={food6} alt="" /> 
           <button class="absolute justify-center m-12 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
   Button
 </button>
@@ -250,7 +262,7 @@ const Hero = () => {
       <div class="p-4 lg:w-1/4">
         <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
+          <img src={food7} alt="" /> 
           <button class="absolute justify-center m-12 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
   Button
 </button>
@@ -264,7 +276,7 @@ const Hero = () => {
 
 
 <div className="w-full relative">
-  <img src="https://i.pinimg.com/564x/93/5b/1f/935b1f66017b69c13aaaedc874e29b73.jpg" alt="" className="w-full object-cover"></img>
+  <img src={frame} alt="" className="w-full object-cover"></img>
   
   <div className='absolute inset-0 flex flex-col items-center justify-center text-white'>
     <h1 className="text-4xl font-bold mb-4">Book Early & Save</h1>
@@ -281,7 +293,7 @@ const Hero = () => {
       {/* Image Item 1 */}
       <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
         <div className="relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1DxB8UnYh4fJRarIPFSHxa_TXp13hRBWsiw&s" />
+          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={cheff}/>
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
@@ -291,7 +303,7 @@ const Hero = () => {
       {/* Image Item 2 */}
       <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
         <div className="relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1DxB8UnYh4fJRarIPFSHxa_TXp13hRBWsiw&s" />
+          <img alt="ecommerce" className="object-cover object-center w-full h-full block"src={cheff} />
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
@@ -301,7 +313,7 @@ const Hero = () => {
       {/* Image Item 3 */}
       <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
         <div className="relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1DxB8UnYh4fJRarIPFSHxa_TXp13hRBWsiw&s" />
+          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={cheff} />
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
@@ -311,7 +323,7 @@ const Hero = () => {
       {/* Image Item 4 */}
       <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
         <div className="relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1DxB8UnYh4fJRarIPFSHxa_TXp13hRBWsiw&s" />
+          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={cheff} />
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
@@ -331,7 +343,7 @@ const Hero = () => {
 <div className="flex flex-row justify-between pt-4">
   {/* Left Section */}
   <div className="flex-1">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA5Bw2LZRc0j40ByHvOJt1N0oms6_qgQsaKQ&s" alt="Restaurant" className="w-full h-auto" />
+    <img src={pic} alt="Restaurant" className="w-full h-auto" />
     <div className="text-left">
       <h1 className="text-2xl font-bold">Our Restaurant</h1>
       <p className="mt-2">
@@ -348,12 +360,12 @@ const Hero = () => {
         Eleifend facilisis sed facilisis varius hendrerit accumsan tortor. Donec nisi est mattis mauris morbi orci maecenas duis. Eleifend facilisis sed facilisis varius hendrerit accumsan tortor. Donec nisi est mattis mauris morbi orci maecenas duis.
       </p>
     </div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA5Bw2LZRc0j40ByHvOJt1N0oms6_qgQsaKQ&s" alt="Restaurant" className="w-full h-auto  mt-72" />
+    <img src={picture}  alt="Restaurant" className="w-full h-auto  mt-72" />
   </div>
 </div>
 
 
-<div className="w-full h-auto bg-red-400 mt-10 py-10">
+<div className="w-full h-auto bg-teal-100 mt-10 py-10">
   {/* Our Services Title */}
   <h1 className="text-center text-3xl font-bold mb-10">Our Services</h1>
   
