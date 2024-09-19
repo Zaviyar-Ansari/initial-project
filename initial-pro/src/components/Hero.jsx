@@ -328,7 +328,10 @@ Varius sed pharetra dictum neque massa congue</span>
     </button>
   </div>
 </div>
-
+<div className='text-center text-4xl text-black w-full h-full mt-16'>
+  <h1>Meet Our Chef
+  </h1>
+</div>
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-row flex-wrap -m-4">

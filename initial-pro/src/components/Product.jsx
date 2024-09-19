@@ -110,22 +110,22 @@ risus. Lacus nisi, et ac dapibus sit eu velit in consequat
                       </div>
 
                       <div class="flex space-x-2 mt-4">
-                          <svg class="w-5 fill-teal-400" viewBox="0 0 14 13" fill="none"
+                          <svg class="w-5 fill-red-500" viewBox="0 0 14 13" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                   d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
                           </svg>
-                          <svg class="w-5 fill-teal-400" viewBox="0 0 14 13" fill="none"
+                          <svg class="w-5 fill-red-500" viewBox="0 0 14 13" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                   d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
                           </svg>
-                          <svg class="w-5 fill-teal-400" viewBox="0 0 14 13" fill="none"
+                          <svg class="w-5 fill-red-500" viewBox="0 0 14 13" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                   d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
                           </svg>
-                          <svg class="w-5 fill-teal-400" viewBox="0 0 14 13" fill="none"
+                          <svg class="w-5 fill-red-500" viewBox="0 0 14 13" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                   d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
@@ -161,7 +161,7 @@ risus. Lacus nisi, et ac dapibus sit eu velit in consequat
               </div>
           </div>
       </div>
-      <div class="mt-8">
+      <div class="mt-8 mx-10">
             <ul class="flex border-b">
               <li
                 class="text-gray-800 font-bold text-sm bg-gray-100 py-3 px-8 border-b-2 border-gray-800 cursor-pointer transition-all">

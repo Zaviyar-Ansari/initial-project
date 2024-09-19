@@ -29,12 +29,12 @@ const Navbar = () => {
     </a>
 
   
-    <a className="text-gray-500" href="/checkout">
+    <a className="text-gray-500" href="/product">
       <img src={detail} alt="Checkout Icon" className="w-6 h-6" />
     </a>
 
     
-    <a className="text-gray-500" href="/product">
+    <a className="text-gray-500" href="/checkout">
       <img src={pay} alt="Products Icon" className="w-6 h-6" />
     </a>
   </div>
