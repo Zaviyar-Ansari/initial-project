@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import HomeIcon from './icons/home.png'; // Ensure path is correct
-import CartIcon from './icons/menu.png'; // Ensure path is correct
-import CheckoutIcon from './icons/franchises.png'; // Ensure path is correct
-import AboutUsIcon from './icons/about.png'; // Ensure path is correct
-import ContactUsIcon from './icons/contact.png'; // Ensure path is correct
+import HomeIcon from './icons/home.png'; 
+import CartIcon from './icons/menu.png'; 
+import CheckoutIcon from './icons/franchises.png'; 
+import AboutUsIcon from './icons/about.png'; 
+import ContactUsIcon from './icons/contact.png'; 
 import dining from './icons/Dinning.svg';
 import serving from './icons/Serving.svg';
 import mainimg from './Images/closeabout.jpg';
@@ -250,12 +250,12 @@ Aenean pretium odio vel tempor sodales. Suspendisse eu fringilla leo, non alique
 
 
 <div className="w-full h-auto py-10 mt-10 bg-teal-100">
-  {/* Our Services Title */}
+
   <h1 className="mb-10 text-3xl font-bold text-center">Our Services</h1>
   
-  {/* Services Section */}
+ 
   <div className="flex flex-row justify-around space-x-8">
-    {/* Concierge Service */}
+    
     <div className="flex flex-col items-center max-w-xs p-4">
       <img src={serving} alt=""  className="w-16 h-14 mb-2" />
       <h2 className="mb-4 text-xl font-semibold">Concierge Service</h2>
@@ -264,7 +264,6 @@ Aenean pretium odio vel tempor sodales. Suspendisse eu fringilla leo, non alique
       </p>
     </div>
 
-    {/* Dining Service */}
     <div className="flex flex-col items-center max-w-xs p-4">
       <img src={dining} alt=""  className="w-16 h-14 mb-2" />
       <h2 className="mb-4 text-xl font-semibold">Dining</h2>
@@ -273,7 +272,7 @@ Aenean pretium odio vel tempor sodales. Suspendisse eu fringilla leo, non alique
       </p>
     </div>
 
-    {/* Restaurant Service */}
+  
     <div className="flex flex-col items-center max-w-xs p-4">
       <img src={CheckoutIcon} alt="" />
       <h2 className="mb-4 text-xl font-semibold">Restaurant</h2>

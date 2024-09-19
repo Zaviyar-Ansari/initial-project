@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import HomeIcon from './icons/home.png'; // Ensure path is correct
-import CartIcon from './icons/menu.png'; // Ensure path is correct
-import CheckoutIcon from './icons/franchises.png'; // Ensure path is correct
-import AboutUsIcon from './icons/about.png'; // Ensure path is correct
-import ContactUsIcon from './icons/contact.png'; // Ensure path is correct
+import HomeIcon from './icons/home.png'; 
+import CartIcon from './icons/menu.png'; 
+import CheckoutIcon from './icons/franchises.png'; 
+import AboutUsIcon from './icons/about.png'; 
+import ContactUsIcon from './icons/contact.png'; 
 import frame from './Images/frame4.png';
 const Faranchies = () => {
   return (
@@ -115,7 +115,7 @@ const Faranchies = () => {
         
         <div className="mt-16 lg:mt-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Text Section (Left) */}
+           
             <div className="rounded-lg overflow-hidden text-left mt-10 text-3xl">
               <div className="px-6 py-4">
                 <h3 className="text-lg font-medium text-gray-900">Pouros and Sons</h3>
@@ -134,7 +134,7 @@ const Faranchies = () => {
               </div>
             </div>
 
-            {/* Map Section (Right) */}
+          
             <div className="rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
@@ -196,7 +196,7 @@ const Faranchies = () => {
         
         <div className="mt-16 lg:mt-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Text Section (Left) */}
+          
             <div className="rounded-lg overflow-hidden text-left mt-10 text-3xl">
               <div className="px-6 py-4">
                 <h3 className="text-lg font-medium text-gray-900">Pouros and Sons</h3>
@@ -215,7 +215,7 @@ const Faranchies = () => {
               </div>
             </div>
 
-            {/* Map Section (Right) */}
+           
             <div className="rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"

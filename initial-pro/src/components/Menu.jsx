@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import HomeIcon from './icons/home.png'; // Ensure path is correct
-import CartIcon from './icons/menu.png'; // Ensure path is correct
-import CheckoutIcon from './icons/franchises.png'; // Ensure path is correct
-import AboutUsIcon from './icons/about.png'; // Ensure path is correct
-import ContactUsIcon from './icons/contact.png'; // Ensure path is correct
+import HomeIcon from './icons/home.png'; 
+import CartIcon from './icons/menu.png'; 
+import CheckoutIcon from './icons/franchises.png';
+import AboutUsIcon from './icons/about.png'; 
+import ContactUsIcon from './icons/contact.png'; 
 import closeupmenu from './Images/closeupmenu.png';
 import food6 from './Images/unsplash6.png';
 import pizza from './icons/pizza.svg';
@@ -88,7 +88,7 @@ const Menu = () => {
 <div>
   
 <div className="flex items-start justify-between p-6 border-b-2 border-gray-300">
-  {/* Left side: Product Image */}
+ 
   <div className="w-1/4">
     <img 
       src={food6}
@@ -97,12 +97,12 @@ const Menu = () => {
     />
   </div>
 
-  {/* Right section: Product Name and Details */}
+ 
   <div className="w-3/4 pl-6">
     <h2 className="text-2xl font-bold text-start -ml-20">Product Name</h2>
     <p className="mt-2 text-gray-600 text-start -ml-20">This is a brief description of the product. It highlights the main features and details about the product.</p>
 
-    {/* Product Price */}
+ 
     <div className="mt-4 text-right">
       <span className="text-3xl font-semibold text-green-600">$99.99</span>
     </div>
@@ -110,7 +110,7 @@ const Menu = () => {
 </div>
 
 <div className="flex items-start justify-between p-6 border-b-2 border-gray-300">
-  {/* Left side: Product Image */}
+ 
   <div className="w-1/4">
     <img 
 src={food6}
@@ -119,12 +119,11 @@ src={food6}
     />
   </div>
 
-  {/* Right section: Product Name and Details */}
+  
   <div className="w-3/4 pl-6">
     <h2 className="text-2xl font-bold text-start -ml-20">Product Name</h2>
     <p className="mt-2 text-gray-600 text-start -ml-20">This is a brief description of the product. It highlights the main features and details about the product.</p>
 
-    {/* Product Price */}
     <div className="mt-4 text-right">
       <span className="text-3xl font-semibold text-green-600">$99.99</span>
     </div>
@@ -132,7 +131,7 @@ src={food6}
 </div>
 
 <div className="flex items-start justify-between p-6 border-b-2 border-gray-300">
-  {/* Left side: Product Image */}
+
   <div className="w-1/4">
     <img 
 src={food6}
@@ -141,12 +140,11 @@ src={food6}
     />
   </div>
 
-  {/* Right section: Product Name and Details */}
+
   <div className="w-3/4 pl-6">
     <h2 className="text-2xl font-bold text-start -ml-20">Product Name</h2>
     <p className="mt-2 text-gray-600 text-start -ml-20">This is a brief description of the product. It highlights the main features and details about the product.</p>
 
-    {/* Product Price */}
     <div className="mt-4 text-right">
       <span className="text-3xl font-semibold text-green-600">$99.99</span>
     </div>
@@ -154,7 +152,7 @@ src={food6}
 </div>
 
 <div className="flex items-start justify-between p-6 border-b-2 border-gray-300">
-  {/* Left side: Product Image */}
+
   <div className="w-1/4">
     <img 
 src={food6}
@@ -163,12 +161,12 @@ src={food6}
     />
   </div>
 
-  {/* Right section: Product Name and Details */}
+
   <div className="w-3/4 pl-6">
     <h2 className="text-2xl font-bold text-start -ml-20">Product Name</h2>
     <p className="mt-2 text-gray-600 text-start -ml-20">This is a brief description of the product. It highlights the main features and details about the product.</p>
 
-    {/* Product Price */}
+  
     <div className="mt-4 text-right">
       <span className="text-3xl font-semibold text-green-600">$99.99</span>
     </div>
@@ -176,7 +174,7 @@ src={food6}
 </div>
 
 <div className="flex items-start justify-between p-6 border-b-2 border-gray-300">
-  {/* Left side: Product Image */}
+ 
   <div className="w-1/4">
     <img 
 src={food6}
@@ -185,12 +183,12 @@ src={food6}
     />
   </div>
 
-  {/* Right section: Product Name and Details */}
+
   <div className="w-3/4 pl-6">
     <h2 className="text-2xl font-bold text-start -ml-20">Product Name</h2>
     <p className="mt-2 text-gray-600 text-start -ml-20">This is a brief description of the product. It highlights the main features and details about the product.</p>
 
-    {/* Product Price */}
+  
     <div className="mt-4 text-right">
       <span className="text-3xl font-semibold text-green-600">$99.99</span>
     </div>
@@ -198,7 +196,7 @@ src={food6}
 </div>
 
 <div className="flex items-start justify-between p-6 border-b-2 border-gray-300">
-  {/* Left side: Product Image */}
+
   <div className="w-1/4">
     <img 
 src={food6}
@@ -207,12 +205,11 @@ src={food6}
     />
   </div>
 
-  {/* Right section: Product Name and Details */}
+ 
   <div className="w-3/4 pl-6">
     <h2 className="text-2xl font-bold text-start -ml-20">Product Name</h2>
     <p className="mt-2 text-gray-600 text-start -ml-20">This is a brief description of the product. It highlights the main features and details about the product.</p>
 
-    {/* Product Price */}
     <div className="mt-4 text-right">
       <span className="text-3xl font-semibold text-green-600">$99.99</span>
     </div>

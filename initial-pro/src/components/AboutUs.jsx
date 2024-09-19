@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import HomeIcon from './icons/home.png'; // Ensure path is correct
-import CartIcon from './icons/menu.png'; // Ensure path is correct
-import CheckoutIcon from './icons/franchises.png'; // Ensure path is correct
-import AboutUsIcon from './icons/about.png'; // Ensure path is correct
-import ContactUsIcon from './icons/contact.png'; // Ensure path is correct
+import HomeIcon from './icons/home.png'; 
+import CartIcon from './icons/menu.png'; 
+import CheckoutIcon from './icons/franchises.png';  
+import AboutUsIcon from './icons/about.png'; 
+import ContactUsIcon from './icons/contact.png'; 
 import closeupmenu from './Images/closeupmenu.png';
 import aboutfood from './Images/closeabout.jpg';
 

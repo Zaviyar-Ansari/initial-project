@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="w-full py-8 px-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
 
-          {/* Logo Section */}
+        
           <div className="text-left">
             <h1 className="text-xl font-bold">LOGO</h1>
             <p className="mt-2">Lorem ipsum dolor sit amet</p>
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact Us Section */}
+          
           <div className="text-left">
             <h1 className="text-xl font-bold">Contact Us</h1>
             <p className="mt-2">25950 Long Lane, North Ismael 14280</p>
@@ -33,7 +33,7 @@ const Footer = () => {
             <p>Sun - Sat / 10:00 AM - 8:00 PM</p>
           </div>
 
-          {/* Links Section */}
+        
           <div className="text-left">
             <h1 className="text-xl font-bold">Links</h1>
             <p className="mt-2">About Us</p>
@@ -43,7 +43,6 @@ const Footer = () => {
             <p>FAQ</p>
           </div>
 
-          {/* Gallery Section */}
           <div className="text-left">
             <h1 className="text-xl font-bold">Gallery</h1>
             <div className="grid grid-cols-3 gap-0 mt-4">
@@ -58,10 +57,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Spacer between upper footer and bottom section */}
+     
       <div className="w-full py-6"></div>
 
-      {/* Footer Bottom Section */}
       <footer className="w-full bg-teal-400 text-white py-4">
   <div className="container mx-auto flex justify-between items-center">
     

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import HomeIcon from './icons/home.png'; // Ensure path is correct
-import CartIcon from './icons/menu.png'; // Ensure path is correct
-import CheckoutIcon from './icons/franchises.png'; // Ensure path is correct
-import AboutUsIcon from './icons/about.png'; // Ensure path is correct
-import ContactUsIcon from './icons/contact.png'; // Ensure path is 
+import HomeIcon from './icons/home.png'; 
+import CartIcon from './icons/menu.png'; 
+import CheckoutIcon from './icons/franchises.png'; 
+import AboutUsIcon from './icons/about.png'; 
+import ContactUsIcon from './icons/contact.png'; 
 import closeup from './Images/closeup.jpg';
 import food1 from './Images/unsplash.png';
 import food2 from './Images/unsplash2.png';
@@ -29,14 +29,14 @@ const Hero = () => {
     className="relative w-full h-full overflow-hidden shadow-lg"
     data-carousel="static"
   >
-    {/* Carousel wrapper */}
+    
     <div className="relative h-full">
-      {/* Slide 1 */}
+     
       <div
         className="duration-700 ease-in-out active"
         data-carousel-item="active"
       >
-        {/* Blackish Overlay */}
+      
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         <img
@@ -55,9 +55,9 @@ Varius sed pharetra dictum neque massa congue</span>
         </span>
       </div>
 
-      {/* Slide 2 */}
+     
       <div className="hidden duration-700 ease-in-out" data-carousel-item>
-        {/* Blackish Overlay */}
+      
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         <img
@@ -70,9 +70,8 @@ Varius sed pharetra dictum neque massa congue</span>
         </span>
       </div>
 
-      {/* Slide 3 */}
       <div className="hidden duration-700 ease-in-out" data-carousel-item>
-        {/* Blackish Overlay */}
+     
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         <img
@@ -86,7 +85,7 @@ Varius sed pharetra dictum neque massa congue</span>
       </div>
     </div>
 
-    {/* Previous Button */}
+
     <button
       type="button"
       className="absolute z-40 flex items-center justify-center w-10 h-10 transition rounded-full top-1/2 left-3 bg-gray-200/50 hover:bg-gray-300 focus:outline-none"
@@ -108,7 +107,7 @@ Varius sed pharetra dictum neque massa congue</span>
       </svg>
     </button>
 
-    {/* Next Button */}
+   
     <button
       type="button"
       className="absolute z-40 flex items-center justify-center w-10 h-10 transition rounded-full top-1/2 right-3 bg-gray-200/50 hover:bg-gray-300 focus:outline-none"
@@ -178,14 +177,13 @@ Varius sed pharetra dictum neque massa congue</span>
     </button>
   </div>
 </nav>
-
-
       </div>
     </div>
    
+
     <section className="bg-white dark:bg-gray-900">
   <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-    {/* Text on the left */}
+ 
     <div className="mr-auto place-self-center lg:col-span-7">
       <p className="pt-4 pl-6 text-2xl leading-normal text-left">About Us</p>
       <p className="pt-3 pl-6 text-2xl leading-normal text-left">We Create the best foody product</p>
@@ -231,7 +229,7 @@ Varius sed pharetra dictum neque massa congue</span>
       </a>
     </div>
 
-    {/* Images on the right */}
+
     <div className="flex-row hidden lg:mt-0 lg:col-span-5 lg:flex">
       <div className="flex flex-wrap w-full">
         <div className="w-full p-1 md:p-2">
@@ -263,54 +261,57 @@ Varius sed pharetra dictum neque massa congue</span>
 
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto justify-center">
-    <h1 className='pb-4 text-4xl text-center '> Food Category
-    </h1>
+    <h1 class="pb-4 text-4xl text-center">Food Category</h1>
     <div class="flex flex-wrap -m-4">
+      
+    
       <div class="p-4 lg:w-1/4">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-           <img className='relative' src={food4} alt="cheff"></img>
-           <button class="absolute justify-center m-12 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
-  Button
-</button>
-
-
+        <div class="h-full bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <div class="relative h-64 w-full">
+            <img class="absolute inset-0 h-full w-full object-cover" src={food4} alt="cheff" />
+            <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
+              Button
+            </button>
           </div>
         </div>
       </div>
-      <div class="p-4 lg:w-1/4">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-          <img src={food5} alt="" /> 
-          <button class="absolute justify-center m-12 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
-  Button
-</button>
 
+      
+      <div class="p-4 lg:w-1/4">
+        <div class="h-full bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <div class="relative h-64 w-full">
+            <img class="absolute inset-0 h-full w-full object-cover" src={food5} alt="" />
+            <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
+              Button
+            </button>
           </div>
         </div>
       </div>
-      <div class="p-4 lg:w-1/4">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-          <img src={food6} alt="" /> 
-          <button class="absolute justify-center m-12 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
-  Button
-</button>
 
+      
+      <div class="p-4 lg:w-1/4">
+        <div class="h-full bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <div class="relative h-64 w-full">
+            <img class="absolute inset-0 h-full w-full object-cover" src={food6} alt="" />
+            <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
+              Button
+            </button>
           </div>
         </div>
       </div>
-      <div class="p-4 lg:w-1/4">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-          <img src={food7} alt="" /> 
-          <button class="absolute justify-center m-12 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
-  Button
-</button>
 
+    
+      <div class="p-4 lg:w-1/4">
+        <div class="h-full bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <div class="relative h-64 w-full">
+            <img class="absolute inset-0 h-full w-full object-cover" src={food7} alt="" />
+            <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
+              Button
+            </button>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -331,40 +332,54 @@ Varius sed pharetra dictum neque massa congue</span>
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-row flex-wrap -m-4">
-      {/* Image Item 1 */}
+    
       <div className="w-full p-4 lg:w-1/4 md:w-1/2">
-        <div className="relative h-48 overflow-hidden rounded">
-          <img alt="ecommerce" className="block object-cover object-center w-full h-72" src={cheff}/>
+        <div className="relative h-64 overflow-hidden rounded"> 
+          <img
+            alt="ecommerce"
+            className="block object-cover object-center w-full h-full" 
+            src={cheff}
+          />
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
         </div>
       </div>
 
-      {/* Image Item 2 */}
+   
       <div className="w-full p-4 lg:w-1/4 md:w-1/2">
-        <div className="relative h-48 overflow-hidden rounded">
-          <img alt="ecommerce" className="block object-cover object-center w-full h-72"src={cheff} />
+        <div className="relative h-64 overflow-hidden rounded"> 
+          <img
+            alt="ecommerce"
+            className="block object-cover object-center w-full h-full" 
+            src={cheff}
+          />
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
         </div>
       </div>
 
-      {/* Image Item 3 */}
       <div className="w-full p-4 lg:w-1/4 md:w-1/2">
-        <div className="relative h-48 overflow-hidden rounded">
-          <img alt="ecommerce" className="block object-cover object-center w-full  h-72" src={cheff} />
+        <div className="relative h-64 overflow-hidden rounded"> 
+          <img
+            alt="ecommerce"
+            className="block object-cover object-center w-full h-full" 
+            src={cheff}
+          />
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
         </div>
       </div>
 
-      {/* Image Item 4 */}
       <div className="w-full p-4 lg:w-1/4 md:w-1/2">
-        <div className="relative h-48 overflow-hidden rounded">
-          <img alt="ecommerce" className="block object-cover object-center w-full h-72" src={cheff} />
+        <div className="relative h-64 overflow-hidden rounded"> 
+          <img
+            alt="ecommerce"
+            className="block object-cover object-center w-full h-full" 
+            src={cheff}
+          />
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
@@ -372,51 +387,48 @@ Varius sed pharetra dictum neque massa congue</span>
       </div>
     </div>
   </div>
-  <div className='mb-8 text-center'>
-    <button  className="bottom-2 left-2 text-white bg-teal-400 border-[4px py-1 px-4 rounded text-sm"> Button</button>
-    </div>
 
+  <div className="mb-8 text-center">
+    <button className="bottom-2 left-2 text-white bg-teal-400 border-[4px] py-1 px-4 rounded text-sm">
+      Button
+    </button>
+  </div>
 </section>
 
 
-
-
-<div className="flex flex-col pt-4 space-y-20">
-  {/* First Section: Image Left, Text Right */}
-  <div className="flex flex-row justify-between">
+<div className="flex flex-col space-y-0 px-8 py-4">
+  <div className="flex flex-row">
     <div className="flex-1">
-      <img src={pic} alt="Restaurant" className="w-full h-auto" />
+      <img src={pic} alt="Restaurant" className="w-full h-auto rounded-bl-none rounded-tl-none rounded-br-lg rounded-tr-lg" />
     </div>
-    <div className="flex-1 ml-8">
-      <h1 className="text-2xl font-bold">Our Restaurant</h1>
-      <p className="mt-4">
+    <div className="flex-1 border-r-2 border-t-2 border-green-500 p-6">
+      <h1 className="text-3xl font-bold text-right">Our Restaurant</h1>
+      <p className="mt-4 text-right">
         Eleifend facilisis sed facilisis varius hendrerit accumsan tortor. Donec nisi est mattis mauris morbi orci maecenas duis. Eleifend facilisis sed facilisis varius hendrerit accumsan tortor. Donec nisi est mattis mauris morbi orci maecenas duis.
       </p>
     </div>
   </div>
 
-  {/* Second Section: Text Left, Image Right */}
-  <div className="flex flex-row justify-between">
-    <div className="flex-1 ml-10">
-      <h1 className="text-2xl font-bold">Meet & Greet</h1>
+  <div className="flex flex-row">
+    <div className="flex-1 border-l-2 border-b-2 border-green-500 p-6">
+      <h1 className="text-3xl font-bold">Meet & Greet</h1>
       <p className="mt-4">
         Eleifend facilisis sed facilisis varius hendrerit accumsan tortor. Donec nisi est mattis mauris morbi orci maecenas duis. Eleifend facilisis sed facilisis varius hendrerit accumsan tortor. Donec nisi est mattis mauris morbi orci maecenas duis.
       </p>
     </div>
     <div className="flex-1">
-      <img src={picture} alt="Restaurant" className="w-full h-auto" />
+      <img src={picture} alt="Meet & Greet" className="w-full h-auto rounded-br-none rounded-bl-lg rounded-tr-lg rounded-tl-none" />
     </div>
-</div>
+  </div>
 </div>
 
 
 <div className="w-full h-auto py-10 mt-10 bg-teal-100">
-  {/* Our Services Title */}
   <h1 className="mb-10 text-3xl font-bold text-center">Our Services</h1>
   
-  {/* Services Section */}
+  
   <div className="flex flex-row justify-around space-x-8">
-    {/* Concierge Service */}
+
     <div className="flex flex-col items-center max-w-xs p-4">
       <img src={serving} alt=""  className="w-16 h-14 mb-2" />
       <h2 className="mb-4 text-xl font-semibold">Concierge Service</h2>
@@ -425,7 +437,7 @@ Varius sed pharetra dictum neque massa congue</span>
       </p>
     </div>
 
-    {/* Dining Service */}
+  
     <div className="flex flex-col items-center max-w-xs p-4">
       <img src={dining} alt=""  className="w-16 h-14 mb-2" />
       <h2 className="mb-4 text-xl font-semibold">Dining</h2>
@@ -434,7 +446,6 @@ Varius sed pharetra dictum neque massa congue</span>
       </p>
     </div>
 
-    {/* Restaurant Service */}
     <div className="flex flex-col items-center max-w-xs p-4">
       <img src={CheckoutIcon} alt="" />
       <h2 className="mb-4 text-xl font-semibold">Restaurant</h2>
@@ -444,12 +455,6 @@ Varius sed pharetra dictum neque massa congue</span>
     </div>
   </div>
 </div>
-
-
-
-
-
-
 </div>
   );
 }

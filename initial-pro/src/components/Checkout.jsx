@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import HomeIcon from './icons/home.png'; // Ensure path is correct
-import CartIcon from './icons/menu.png'; // Ensure path is correct
-import CheckoutIcon from './icons/franchises.png'; // Ensure path is correct
-import AboutUsIcon from './icons/about.png'; // Ensure path is correct
-import ContactUsIcon from './icons/contact.png'; // Ensure path is correct
+import HomeIcon from './icons/home.png'; 
+import CartIcon from './icons/menu.png'; 
+import CheckoutIcon from './icons/franchises.png'; 
+import AboutUsIcon from './icons/about.png'; 
+import ContactUsIcon from './icons/contact.png'; 
 import closeupmenu from './Images/closeupmenu.png';
+import food6 from './Images/unsplash6.png';
 
 const Checkout = () => {
   return (
@@ -110,7 +111,7 @@ const Checkout = () => {
     <div className="grid grid-cols-3 items-start gap-4">
       <div className="col-span-2 flex items-start gap-4">
         <div className="w-28 h-28 shrink-0 bg-gray-100 p-2 rounded-md">
-          <img src="https://readymadeui.com/images/product14.webp" className="w-full h-full object-contain" />
+          <img src={food6} className="w-full h-full object-contain" />
         </div>
         <div className="flex flex-col text-left">
           <h3 className="text-base font-bold text-gray-800">Product Name</h3>
@@ -125,7 +126,7 @@ const Checkout = () => {
     <div className="grid grid-cols-3 items-start gap-4">
       <div className="col-span-2 flex items-start gap-4">
         <div className="w-28 h-28 shrink-0 bg-gray-100 p-2 rounded-md">
-          <img src="https://readymadeui.com/images/product14.webp" className="w-full h-full object-contain" />
+          <img src={food6} className="w-full h-full object-contain" />
         </div>
         <div className="flex flex-col text-left">
           <h3 className="text-base font-bold text-gray-800">Product Name</h3>
@@ -140,7 +141,7 @@ const Checkout = () => {
     <div className="grid grid-cols-3 items-start gap-4">
       <div className="col-span-2 flex items-start gap-4">
         <div className="w-28 h-28 shrink-0 bg-gray-100 p-2 rounded-md">
-          <img src="https://readymadeui.com/images/product14.webp" className="w-full h-full object-contain" />
+          <img src={food6} className="w-full h-full object-contain" />
         </div>
         <div className="flex flex-col text-left">
           <h3 className="text-base font-bold text-gray-800">Product Name</h3>
