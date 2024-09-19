@@ -6,6 +6,10 @@ export default {
     ],
     theme: {
         extend: {},
+        fontFamily: {
+            montez: ['Montez', 'cursive'],
+        },
+
     },
     plugins: [],
 }

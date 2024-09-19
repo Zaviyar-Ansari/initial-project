@@ -10,6 +10,7 @@ import ContactUs from './components/ContactUs';
 import Navbar from './components/Navbar';
 import Menu from './components/Menu';
 import Footer from './components/Footer';
+import Product from './components/Product';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Faranchies" element={<Faranchies />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/product" element={<Product />} />
         <Route path="/menu" element={<Menu />} />
 
       </Routes>

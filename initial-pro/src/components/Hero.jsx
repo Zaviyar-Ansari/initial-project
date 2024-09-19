@@ -17,10 +17,12 @@ import food7 from './Images/unsplash7.png';
 import frame from './Images/frame4.png';
 import picture from './Images/Picture.png';
 import pic from './Images/pic.png';
+import dining from './icons/Dinning.svg';
+import serving from './icons/Serving.svg';
 const Hero = () => {
   return (
     <div>
-      <div className="flex w-full h-96 overflow-hidden relative">
+      <div className="relative flex w-full overflow-hidden h-96">
       <div className="w-1/2 h-full">
   <div
     id="default-carousel"
@@ -42,8 +44,14 @@ const Hero = () => {
           className="object-cover w-full h-full"
           alt="Slide 1"
         />
-        <span className="absolute text-xl font-semibold text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:text-2xl">
-          First Slide
+        <span className="absolute text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:text-2xl">
+        <span className='mb-10 text-lg font-montez'>Its Quick & Amusing!</span> <br></br><span className='mt-5 text-3xl font-semibold'>Lorem ipsum dolor sit amet consectetur.</span><br></br>
+       <span className='text-xs font-bold transform-none'> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Varius sed pharetra dictum neque massa congue</span>
+<button className='justify-end w-20 mt-10 text-base bg-teal-400 rounded-md h-14'>
+  See More
+</button>
         </span>
       </div>
 
@@ -131,8 +139,8 @@ const Hero = () => {
           alt="Food Image"
           className="object-cover w-full h-full shadow-lg"
         />
-       <nav className="bg-gray-800 bg-opacity-50 p-4 h-fit flex flex-col justify-between rounded-md fixed right-0 top-16 z-50">
-  <ul className="list-none space-y-6 text-center text-white">
+       <nav className="fixed right-0 z-50 flex flex-col justify-between p-4 bg-gray-800 bg-opacity-50 rounded-md h-fit top-16">
+  <ul className="space-y-6 text-center text-white list-none">
     <li>
       <Link to="/" className="flex flex-col items-center justify-center">
         <img src={HomeIcon} alt="Home" className="w-6 h-6 mb-2" />
@@ -165,7 +173,7 @@ const Hero = () => {
     </li>
   </ul>
   <div className="flex justify-center mt-4">
-    <button className="px-6 py-3 bg-teal-500 text-white rounded-lg">
+    <button className="px-6 py-3 text-white bg-teal-500 rounded-lg">
       Book Now
     </button>
   </div>
@@ -179,9 +187,9 @@ const Hero = () => {
   <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
     {/* Text on the left */}
     <div className="mr-auto place-self-center lg:col-span-7">
-      <p className="pl-6 text-2xl text-left leading-normal pt-4">About Us</p>
-      <p className="pl-6 text-2xl text-left leading-normal pt-3">We Create the best foody product</p>
-      <p className="pl-6 text-sm text-left leading-normal pt-4">
+      <p className="pt-4 pl-6 text-2xl leading-normal text-left">About Us</p>
+      <p className="pt-3 pl-6 text-2xl leading-normal text-left">We Create the best foody product</p>
+      <p className="pt-4 pl-6 text-sm leading-normal text-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam
         pellentesque bibendum <br /> non dui volutpat fringilla bibendum. Urna,
         elit augue urna, vitae feugiat pretium donec id elementum. Ultrices
@@ -206,44 +214,44 @@ const Hero = () => {
           ></path>
         </svg>
       </a>
-      <p className="pl-6 text-1xl text-left leading-normal pt-3">
+      <p className="pt-3 pl-6 leading-normal text-left text-1xl">
         Lacus nisi, et ac dapibus sit eu velit in consequat.
       </p>
-      <p className="pl-6 text-1xl text-left leading-normal pt-3">
+      <p className="pt-3 pl-6 leading-normal text-left text-1xl">
         Quisque diam pellentesque bibendum non dui volutpat fringilla
       </p>
-      <p className="pl-6 text-1xl text-left leading-normal pt-3">
+      <p className="pt-3 pl-6 leading-normal text-left text-1xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
       </p>
       <a
         href="#"
-        className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white border bg-teal-500 border-gray-300 rounded-lg hover:bg-teal-200 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+        className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-teal-500 border border-gray-300 rounded-lg hover:bg-teal-200 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
       >
         Read More
       </a>
     </div>
 
     {/* Images on the right */}
-    <div className="hidden lg:mt-0 lg:col-span-5 lg:flex flex-row">
+    <div className="flex-row hidden lg:mt-0 lg:col-span-5 lg:flex">
       <div className="flex flex-wrap w-full">
-        <div className="md:p-2 p-1 w-full">
+        <div className="w-full p-1 md:p-2">
           <img
             alt="gallery"
-            className="w-full h-full object-cover object-center block"
+            className="block object-cover object-center w-full h-full"
             src={food1}
           />
         </div>
-        <div className="md:p-2 p-1 w-1/2">
+        <div className="w-1/2 p-1 md:p-2">
           <img
             alt="gallery"
-            className="w-full object-cover h-full object-center block"
+            className="block object-cover object-center w-full h-full"
             src={food2}
           />
         </div>
-        <div className="md:p-2 p-1 w-1/2">
+        <div className="w-1/2 p-1 md:p-2">
           <img
             alt="gallery"
-            className="w-full object-cover h-full object-center block"
+            className="block object-cover object-center w-full h-full"
             src={food3}
           />
         </div>
@@ -254,8 +262,8 @@ const Hero = () => {
 
 
 <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <h1 className='text-4xl pb-4 '> Food Category
+  <div class="container px-5 py-24 mx-auto justify-center">
+    <h1 className='pb-4 text-4xl text-center '> Food Category
     </h1>
     <div class="flex flex-wrap -m-4">
       <div class="p-4 lg:w-1/4">
@@ -308,12 +316,12 @@ const Hero = () => {
 </section>
 
 
-<div className="w-full relative">
-  <img src={frame} alt="" className="w-full object-cover"></img>
+<div className="relative w-full">
+  <img src={frame} alt="" className="object-cover w-full"></img>
   
   <div className='absolute inset-0 flex flex-col items-center justify-center text-white'>
-    <h1 className="text-4xl font-bold mb-4">Book Early & Save</h1>
-    <p className="text-lg mb-6">Lorem ipsum dolor sit amet consectetur.</p>
+    <h1 className="mb-4 text-4xl font-bold">Book Early & Save</h1>
+    <p className="mb-6 text-lg">Lorem ipsum dolor sit amet consectetur.</p>
     <button class="justify-center text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-2 px-8 rounded text-md">
       Button
     </button>
@@ -324,9 +332,9 @@ const Hero = () => {
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-row flex-wrap -m-4">
       {/* Image Item 1 */}
-      <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <div className="relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={cheff}/>
+      <div className="w-full p-4 lg:w-1/4 md:w-1/2">
+        <div className="relative h-48 overflow-hidden rounded">
+          <img alt="ecommerce" className="block object-cover object-center w-full h-72" src={cheff}/>
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
@@ -334,9 +342,9 @@ const Hero = () => {
       </div>
 
       {/* Image Item 2 */}
-      <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <div className="relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" className="object-cover object-center w-full h-full block"src={cheff} />
+      <div className="w-full p-4 lg:w-1/4 md:w-1/2">
+        <div className="relative h-48 overflow-hidden rounded">
+          <img alt="ecommerce" className="block object-cover object-center w-full h-72"src={cheff} />
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
@@ -344,9 +352,9 @@ const Hero = () => {
       </div>
 
       {/* Image Item 3 */}
-      <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <div className="relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={cheff} />
+      <div className="w-full p-4 lg:w-1/4 md:w-1/2">
+        <div className="relative h-48 overflow-hidden rounded">
+          <img alt="ecommerce" className="block object-cover object-center w-full  h-72" src={cheff} />
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
@@ -354,9 +362,9 @@ const Hero = () => {
       </div>
 
       {/* Image Item 4 */}
-      <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <div className="relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={cheff} />
+      <div className="w-full p-4 lg:w-1/4 md:w-1/2">
+        <div className="relative h-48 overflow-hidden rounded">
+          <img alt="ecommerce" className="block object-cover object-center w-full h-72" src={cheff} />
           <button className="absolute bottom-2 left-2 text-white bg-teal-400 border-[4px] border-white border-opacity-50 py-1 px-4 rounded text-sm">
             Button
           </button>
@@ -364,7 +372,7 @@ const Hero = () => {
       </div>
     </div>
   </div>
-  <div>
+  <div className='mb-8 text-center'>
     <button  className="bottom-2 left-2 text-white bg-teal-400 border-[4px py-1 px-4 rounded text-sm"> Button</button>
     </div>
 
@@ -373,56 +381,63 @@ const Hero = () => {
 
 
 
-<div className="flex flex-row justify-between pt-4">
-  {/* Left Section */}
-  <div className="flex-1">
-    <img src={pic} alt="Restaurant" className="w-full h-auto" />
-    <div className="text-left">
+<div className="flex flex-col pt-4 space-y-20">
+  {/* First Section: Image Left, Text Right */}
+  <div className="flex flex-row justify-between">
+    <div className="flex-1">
+      <img src={pic} alt="Restaurant" className="w-full h-auto" />
+    </div>
+    <div className="flex-1 ml-8">
       <h1 className="text-2xl font-bold">Our Restaurant</h1>
-      <p className="mt-2">
+      <p className="mt-4">
         Eleifend facilisis sed facilisis varius hendrerit accumsan tortor. Donec nisi est mattis mauris morbi orci maecenas duis. Eleifend facilisis sed facilisis varius hendrerit accumsan tortor. Donec nisi est mattis mauris morbi orci maecenas duis.
       </p>
     </div>
   </div>
 
-  {/* Right Section */}
-  <div className="flex-1">
-    <div className="text-left">
-      <h1 className="text-2xl font-bold">Our Restaurant</h1>
-      <p className="">
+  {/* Second Section: Text Left, Image Right */}
+  <div className="flex flex-row justify-between">
+    <div className="flex-1 ml-10">
+      <h1 className="text-2xl font-bold">Meet & Greet</h1>
+      <p className="mt-4">
         Eleifend facilisis sed facilisis varius hendrerit accumsan tortor. Donec nisi est mattis mauris morbi orci maecenas duis. Eleifend facilisis sed facilisis varius hendrerit accumsan tortor. Donec nisi est mattis mauris morbi orci maecenas duis.
       </p>
     </div>
-    <img src={picture}  alt="Restaurant" className="w-full h-auto  mt-72" />
-  </div>
+    <div className="flex-1">
+      <img src={picture} alt="Restaurant" className="w-full h-auto" />
+    </div>
+</div>
 </div>
 
 
-<div className="w-full h-auto bg-teal-100 mt-10 py-10">
+<div className="w-full h-auto py-10 mt-10 bg-teal-100">
   {/* Our Services Title */}
-  <h1 className="text-center text-3xl font-bold mb-10">Our Services</h1>
+  <h1 className="mb-10 text-3xl font-bold text-center">Our Services</h1>
   
   {/* Services Section */}
   <div className="flex flex-row justify-around space-x-8">
     {/* Concierge Service */}
-    <div className="flex flex-col items-center p-4 max-w-xs">
-      <h2 className="text-xl font-semibold mb-4">Concierge Service</h2>
+    <div className="flex flex-col items-center max-w-xs p-4">
+      <img src={serving} alt=""  className="w-16 h-14 mb-2" />
+      <h2 className="mb-4 text-xl font-semibold">Concierge Service</h2>
       <p className="text-center">
         Lorem ipsum dolor sit amet consectetur. Ut sit dui congue est. Odio euismod sed amet libero. Scelerisque sed enim.
       </p>
     </div>
 
     {/* Dining Service */}
-    <div className="flex flex-col items-center p-4  max-w-xs">
-      <h2 className="text-xl font-semibold mb-4">Dining</h2>
+    <div className="flex flex-col items-center max-w-xs p-4">
+      <img src={dining} alt=""  className="w-16 h-14 mb-2" />
+      <h2 className="mb-4 text-xl font-semibold">Dining</h2>
       <p className="text-center">
         Lorem ipsum dolor sit amet consectetur. Ut sit dui congue est. Odio euismod sed amet libero. Scelerisque sed enim.
       </p>
     </div>
 
     {/* Restaurant Service */}
-    <div className="flex flex-col items-center p-4  max-w-xs">
-      <h2 className="text-xl font-semibold mb-4">Restaurant</h2>
+    <div className="flex flex-col items-center max-w-xs p-4">
+      <img src={CheckoutIcon} alt="" />
+      <h2 className="mb-4 text-xl font-semibold">Restaurant</h2>
       <p className="text-center">
         Lorem ipsum dolor sit amet consectetur. Ut sit dui congue est. Odio euismod sed amet libero. Scelerisque sed enim.
       </p>

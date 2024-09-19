@@ -9,57 +9,62 @@ import frame from './Images/frame4.png';
 const Faranchies = () => {
   return (
     <div>
-      <div className="relative">
-      <img 
-        src={frame}
-        alt="Menu Background" 
-        className="w-full h-60"
-      />
-      <div className="absolute inset-0 flex items-center justify-center bg-black opacity-50">
-        <h1 className="text-white text-5xl">MENU</h1>
-      </div>
-      <div className="absolute top-0 mt-6 mr-4  right-0 w-40 h-72">
-      <nav className="bg-gray-800 bg-opacity-50 p-4 h-fit flex flex-col justify-between rounded-md fixed right-0 top-16 z-50">
-  <ul className="list-none space-y-6 text-center text-white">
-    <li>
-      <Link to="/" className="flex flex-col items-center justify-center">
-        <img src={HomeIcon} alt="Home" className="w-6 h-6 mb-2" />
-        <span>Home</span>
-      </Link>
-    </li>
-    <li>
-      <Link to="/menu" className="flex flex-col items-center justify-center">
-        <img src={CartIcon} alt="" className="w-6 h-6 mb-2" />
-        <span>Menu</span>
-      </Link>
-    </li>
-    <li>
-      <Link to="/Faranchies" className="flex flex-col items-center justify-center">
-        <img src={CheckoutIcon} alt="" className="w-6 h-6 mb-2" />
-        <span>Franchies</span>
-      </Link>
-    </li>
-    <li>
-      <Link to="/about-us" className="flex flex-col items-center justify-center">
-        <img src={AboutUsIcon} alt="About" className="w-6 h-6 mb-2" />
-        <span>About Us</span>
-      </Link>
-    </li>
-    <li>
-      <Link to="/contact-us" className="flex flex-col items-center justify-center">
-        <img src={ContactUsIcon} alt="Contact Us" className="w-6 h-6 mb-2" />
-        <span>Contact Us</span>
-      </Link>
-    </li>
-  </ul>
-  <div className="flex justify-center mt-4">
-    <button className="px-6 py-3 bg-teal-500 text-white rounded-lg">
-      Book Now
-    </button>
+     <div className="relative">
+  <div className="relative">
+    <img 
+      src={frame}
+      alt="Menu Background" 
+      className="w-full h-80 object-cover"
+    />
+    <div className="absolute inset-0 bg-black opacity-50"></div>
   </div>
-</nav>
-        </div>
-    </div>
+  <div className="absolute inset-0 flex items-center justify-center">
+    <h1 className="text-white text-6xl mb-10">Our Branches</h1>
+  </div>
+  <div className="absolute top-0 mt-6 mr-4 right-0 w-40 h-72">
+    <nav className="bg-gray-800 bg-opacity-50 p-4 h-fit flex flex-col justify-between rounded-md fixed right-0 top-16 z-50">
+      <ul className="list-none space-y-6 text-center text-white">
+        <li>
+          <Link to="/" className="flex flex-col items-center justify-center">
+            <img src={HomeIcon} alt="Home" className="w-6 h-6 mb-2" />
+            <span>Home</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/menu" className="flex flex-col items-center justify-center">
+            <img src={CartIcon} alt="" className="w-6 h-6 mb-2" />
+            <span>Menu</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/Faranchies" className="flex flex-col items-center justify-center">
+            <img src={CheckoutIcon} alt="" className="w-6 h-6 mb-2" />
+            <span>Franchies</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/about-us" className="flex flex-col items-center justify-center">
+            <img src={AboutUsIcon} alt="About" className="w-6 h-6 mb-2" />
+            <span>About Us</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact-us" className="flex flex-col items-center justify-center">
+            <img src={ContactUsIcon} alt="Contact Us" className="w-6 h-6 mb-2" />
+            <span>Contact Us</span>
+          </Link>
+        </li>
+      </ul>
+      <div className="flex justify-center mt-4">
+        <button className="px-6 py-3 bg-teal-500 text-white rounded-lg">
+          Book Now
+        </button>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
 
 <div className='text-center text-4xl text-black w-full h-40 mt-16'>
   <h1>Introducing New look 
@@ -140,7 +145,10 @@ const Faranchies = () => {
       </div>
     </section>
 
-
+    <div className='text-center text-4xl text-black w-full h-40 mt-16'>
+  <h1>We Are Now in Bristol
+  </h1>
+</div>
 
     <div class="w-full relative rounded-lg overflow-hidden shadow-lg" data-carousel="static">
 
