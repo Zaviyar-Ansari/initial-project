@@ -7,61 +7,72 @@ import AboutUsIcon from './icons/about.png'; // Ensure path is correct
 import ContactUsIcon from './icons/contact.png'; // Ensure path is correct
 import dining from './icons/Dinning.svg';
 import serving from './icons/Serving.svg';
+import mainimg from './Images/closeabout.jpg';
+import food4 from './Images/unsplash4.png';
+import food5 from './Images/unsplash5.png';
+import food6 from './Images/unsplash6.png';
+import food7 from './Images/unsplash7.png';
+import closeupmenu from './Images/closeupmenu.png';
+
 
 const Product = () => {
   return (
     <div>
-        <div className="relative">
-      <img 
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9XhEX6CpPioaSgbk0F3qIKzUFi6WUBhplmw&s" 
-        alt="Menu Background" 
-        className="w-full h-60 bg-gray-700 opacity-80"
-      />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-white text-5xl">MENU</h1>
-      </div>
-      <div className="absolute top-0 mt-6 mr-4  right-0 w-40 h-72">
-      <nav className="bg-gray-800 bg-opacity-50 p-4 h-fit flex flex-col justify-between rounded-md fixed right-0 top-16 z-50">
-  <ul className="list-none space-y-6 text-center text-white">
-    <li>
-      <Link to="/" className="flex flex-col items-center justify-center">
-        <img src={HomeIcon} alt="Home" className="w-6 h-6 mb-2" />
-        <span>Home</span>
-      </Link>
-    </li>
-    <li>
-      <Link to="/menu" className="flex flex-col items-center justify-center">
-        <img src={CartIcon} alt="" className="w-6 h-6 mb-2" />
-        <span>Menu</span>
-      </Link>
-    </li>
-    <li>
-      <Link to="/Faranchies" className="flex flex-col items-center justify-center">
-        <img src={CheckoutIcon} alt="" className="w-6 h-6 mb-2" />
-        <span>Franchies</span>
-      </Link>
-    </li>
-    <li>
-      <Link to="/about-us" className="flex flex-col items-center justify-center">
-        <img src={AboutUsIcon} alt="About" className="w-6 h-6 mb-2" />
-        <span>About Us</span>
-      </Link>
-    </li>
-    <li>
-      <Link to="/contact-us" className="flex flex-col items-center justify-center">
-        <img src={ContactUsIcon} alt="Contact Us" className="w-6 h-6 mb-2" />
-        <span>Contact Us</span>
-      </Link>
-    </li>
-  </ul>
-  <div className="flex justify-center mt-4">
-    <button className="px-6 py-3 bg-teal-500 text-white rounded-lg">
-      Book Now
-    </button>
+            <div className="relative">
+  <div className="relative">
+    <img 
+      src={closeupmenu}
+      alt="Menu Background" 
+      className="w-full h-60 object-cover"
+    />
+    <div className="absolute inset-0 bg-black opacity-50"></div>
   </div>
-</nav>
-        </div>
-    </div>
+  <div className="absolute inset-0 flex items-center justify-center">
+    <h1 className="text-white text-5xl">Product Details</h1>
+  </div>
+  <div className="absolute top-0 mt-6 mr-4 right-0 w-40 h-72">
+    <nav className="bg-gray-800 bg-opacity-50 p-4 h-fit flex flex-col justify-between rounded-md fixed right-0 top-16 z-50">
+      <ul className="list-none space-y-6 text-center text-white">
+        <li>
+          <Link to="/" className="flex flex-col items-center justify-center">
+            <img src={HomeIcon} alt="Home" className="w-6 h-6 mb-2" />
+            <span>Home</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/menu" className="flex flex-col items-center justify-center">
+            <img src={CartIcon} alt="" className="w-6 h-6 mb-2" />
+            <span>Menu</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/Faranchies" className="flex flex-col items-center justify-center">
+            <img src={CheckoutIcon} alt="" className="w-6 h-6 mb-2" />
+            <span>Franchies</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/about-us" className="flex flex-col items-center justify-center">
+            <img src={AboutUsIcon} alt="About" className="w-6 h-6 mb-2" />
+            <span>About Us</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact-us" className="flex flex-col items-center justify-center">
+            <img src={ContactUsIcon} alt="Contact Us" className="w-6 h-6 mb-2" />
+            <span>Contact Us</span>
+          </Link>
+        </li>
+      </ul>
+      <div className="flex justify-center mt-4">
+        <button className="px-6 py-3 bg-teal-500 text-white rounded-lg">
+          Book Now
+        </button>
+      </div>
+    </nav>
+  </div>
+</div>
+
 
 
 
@@ -71,12 +82,12 @@ const Product = () => {
 
                   <div class="w-full lg:sticky top-0 sm:flex gap-2">
                       <div class="sm:space-y-3 w-16 max-sm:w-12 max-sm:flex max-sm:mb-4 max-sm:gap-4">
-                          <img src="https://readymadeui.com/images/product1.webp" alt="Product1" class="w-full cursor-pointer rounded-md outline" />
-                          <img src="https://readymadeui.com/images/product6.webp" alt="Product2" class="w-full cursor-pointer rounded-md" />
-                          <img src="https://readymadeui.com/images/product7.webp" alt="Product3" class="w-full cursor-pointer rounded-md" />
-                          <img src="https://readymadeui.com/images/product3.webp" alt="Product4" class="w-full cursor-pointer rounded-md" />
+                          <img src={mainimg} alt="Product1" class="w-full cursor-pointer rounded-md outline" />
+                          <img src={mainimg} alt="Product2" class="w-full cursor-pointer rounded-md" />
+                          <img src={mainimg} alt="Product3" class="w-full cursor-pointer rounded-md" />
+                          <img src={mainimg} alt="Product4" class="w-full cursor-pointer rounded-md" />
                       </div>
-                      <img src="https://readymadeui.com/images/product2.webp" alt="Product" class="w-4/5 rounded-md object-cover" />
+                      <img src={mainimg} alt="Product" class="w-4/5 rounded-md object-cover" />
                   </div>
 
                   <div>
@@ -99,22 +110,22 @@ risus. Lacus nisi, et ac dapibus sit eu velit in consequat
                       </div>
 
                       <div class="flex space-x-2 mt-4">
-                          <svg class="w-5 fill-blue-600" viewBox="0 0 14 13" fill="none"
+                          <svg class="w-5 fill-teal-400" viewBox="0 0 14 13" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                   d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
                           </svg>
-                          <svg class="w-5 fill-blue-600" viewBox="0 0 14 13" fill="none"
+                          <svg class="w-5 fill-teal-400" viewBox="0 0 14 13" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                   d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
                           </svg>
-                          <svg class="w-5 fill-blue-600" viewBox="0 0 14 13" fill="none"
+                          <svg class="w-5 fill-teal-400" viewBox="0 0 14 13" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                   d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
                           </svg>
-                          <svg class="w-5 fill-blue-600" viewBox="0 0 14 13" fill="none"
+                          <svg class="w-5 fill-teal-400" viewBox="0 0 14 13" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                   d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
@@ -139,7 +150,7 @@ risus. Lacus nisi, et ac dapibus sit eu velit in consequat
     <button type="button" class="w-10 h-full bg-gray-200 hover:bg-gray-300 text-lg font-semibold">+</button>
   </div>
 
-  <button type="button" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-md">
+  <button type="button" class="px-6 py-3 bg-teal-400 text-white text-sm font-semibold rounded-md">
     Add to cart
   </button>
 </div>
@@ -193,20 +204,10 @@ Aenean pretium odio vel tempor sodales. Suspendisse eu fringilla leo, non alique
     <h1 className='text-4xl pb-4 text-left '>Similar Products
     </h1>
     <div class="flex flex-wrap -m-4">
-    <div class="p-4 lg:w-1/4 text-left">
+    <div class="p-4 lg:w-1/4  text-left">
         <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
-         
-          </div>
-        </div>
-        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Product Name</h2>
-        <p class=" mt-2">$38.00 <del>$45.00</del></p>
-      </div>
-      <div class="p-4 lg:w-1/4  text-left">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
+          <img src={food7} alt="" /> 
          
           </div>
         </div>
@@ -216,7 +217,17 @@ Aenean pretium odio vel tempor sodales. Suspendisse eu fringilla leo, non alique
       <div class="p-4 lg:w-1/4  text-left">
         <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
+          <img src={food4} alt="" /> 
+         
+          </div>
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Product Name</h2>
+        <p class=" mt-2">$38.00  </p>
+      </div>
+      <div class="p-4 lg:w-1/4  text-left">
+        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+          <img src={food5} alt="" /> 
          
           </div>
         </div>
@@ -226,7 +237,7 @@ Aenean pretium odio vel tempor sodales. Suspendisse eu fringilla leo, non alique
       <div class="p-4 lg:w-1/4  text-left ">
         <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="" /> 
+          <img src={food6} alt="" /> 
          
           </div>
         </div>

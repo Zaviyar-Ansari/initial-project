@@ -62,7 +62,7 @@ const Footer = () => {
       <div className="w-full py-6"></div>
 
       {/* Footer Bottom Section */}
-      <footer className="w-full bg-gray-800 text-white py-4">
+      <footer className="w-full bg-teal-400 text-white py-4">
   <div className="container mx-auto flex justify-between items-center">
     
     <h1 className='ml-10'>
